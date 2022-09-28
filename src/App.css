@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,600;1,900&display=swap');
 .nav{
     display: flex;
     width:98.7%;
@@ -7,6 +10,8 @@
    color: antiquewhite;
    height: 80px;
    padding-left: 20px;
+   font-family: 'Poppins', sans-serif;
+   
 }
 .button{
     margin: 0px 10px 0px 10px;
@@ -23,7 +28,7 @@
     cursor: pointer;
     border-radius: 5px;
     font-size: auto;
-  
+    font-family: 'Poppins', sans-serif;
 }
 .form{
    width:100%;
@@ -40,17 +45,19 @@
     display: flex;
    padding-inline-start: 100px;
    
-}/*
-.span{
-    text-indent: 10px;
-}*/
+}
+.span--h{
+    font-family: 'Poppins', sans-serif;
+}
 .input{
     width: 50%;
     height: 30px;
     margin-left: 60px;
     padding: 8px;
     border-radius: 10px; 
-    text-align: center;
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
     animation: input 5s ease infinite;
 }
 @keyframes input{
@@ -58,7 +65,7 @@
       transform: scale(1, 1);
     }
     50% {
-      transform: scale(1.2,1.2);
+      transform: scale(1.1,1.1);
     }
     100% {
       transform: scale(1, 1);
@@ -69,19 +76,21 @@
 }
 .inputde{
     width: 50%;
-    height: 30px;
+    height: 90px;
     margin-left: 60px;
-    padding:8px;
+    padding: 10px 20px 10px 20px;
     border-radius: 10px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
     animation: inputde 5s ease infinite;
+    font-size: large;
 }
 @keyframes inputde {
     0% {
       transform: scale(1, 1);
     }
     50% {
-      transform: scale(1.2,1.2);
+      transform: scale(1.1,1.1);
     }
     100% {
       transform: scale(1, 1);
@@ -122,17 +131,24 @@
 .presentComplaint{
    margin-top: 50px;
   height: 700px;
- background-color: rgb(216, 140, 156);
+ background-color:rgb(255, 255, 255);
  }
  .card{
     height: 350px;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* width: 50vw; */
     display: flex;
     align-items: center;
     padding: 10px 10px 20px 20px;
-  
-    background-color: 	#d50d0d;
+    font-family: 'Poppins', sans-serif;
+    background-color: 	rgb(249, 249, 249);
     margin-top: 20px;
-    box-shadow: 10px 10px 10px 0px ;
+  
+ }
+ .card:hover{
+    box-shadow: 10px 10px 10px 0px rgb(199, 192, 192);
+    margin: 0px;
  }
  
  .card--img{
@@ -144,20 +160,25 @@
     display: flex;
     flex-direction: column;
     margin-top: -60px;
+    font-family: 'Poppins', sans-serif;
  }
  .card--number{
     margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
     margin-top: 30px;
  }
  .card--date{
     margin-bottom:30px;
+    font-family: 'Poppins', sans-serif;
  }
  .card--description{
     margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
  }
  .completedComplaint{
     height: 500px;
     background-color: aqua;
+    font-family: 'Poppins', sans-serif;
  }
 
  @media (max-width:500px){
@@ -192,7 +213,8 @@
     }
  }
 
- @media(max-width:1000px){
+
+ @media (max-width:900px) {
     .up{
         position: absolute;
         bottom:90px;
@@ -204,4 +226,18 @@
     .nav{
         height:150px
     }
+    .card{
+        height: auto;
+         /* margin-left: -2000px; */
+    
+        width: auto;
+        display: flex;
+        /* align-items: center; */
+        /* padding: 10px 10px 20px 20px; */
+        font-family: 'Poppins', sans-serif;
+        background-color: 	rgb(249, 249, 249);
+        margin-top: 20px;
+      
+     }
+    
  }

@@ -1,14 +1,14 @@
 import React from "react";
 
 
-export default function form(props) {
+export default function NewComplaint(props) {
   console.log(props)
   return (
     <div className="form">
       <form className="form" onSubmit={props.handleSubmit}>
         <div className="formElement">
           <span className="span">
-            <h2>NAME:</h2>
+            <h2 className="span--h">NAME:</h2>
           </span>
           <input
             type="text"
@@ -21,7 +21,7 @@ export default function form(props) {
         </div>
         <div className="formElement">
           <span className="span">
-            <h2>BRANCH:</h2>
+            <h2 className="span--h">BRANCH:</h2>
           </span>
 
           <input
@@ -50,8 +50,8 @@ export default function form(props) {
         </div>
         <div className="formElement">
           <span className="span">
-            <h2>DUSTBIN</h2>
-            <h2>NUMBER:</h2>
+            <h2 className="span--h">DUSTBIN</h2>
+            <h2 className="span--h">NUMBER:</h2>
           </span>
           <input
             id="dustbinNumber"
